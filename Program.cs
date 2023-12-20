@@ -12,6 +12,12 @@ int CountElements(string[] data)
     return count; //Возвращаем кол-во элементов, удовлетворяющие условию
 }
 
+void PrintMas(string[] mas)
+{
+    Console.WriteLine($"[{String.Join("; ", mas)}]");
+}
+
 string[] mas = {"Russia", "Denmark", "Kazan"};
+PrintMas(mas);
 string[] res = new string[CountElements(mas)];
 
